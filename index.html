@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Colour Picker</title>
+		<link href="./colour-picker.css" rel="stylesheet">
+	</head>
+	<body id="body">
+
+		<div class="mode-container">
+			<h2>Mode</h2>
+			<div class="buttons-wrapper">
+				<button id="hsl-button" class="mode-button selected">HSL</button>
+				<button id="rgb-button" class="mode-button">RGB</button>
+			</div>
+		</div>
+
+		<div class="main-container">
+			<div class="title">
+			  <h1>Klawrz Colour Picker</h1>
+		  </div>
+
+		  <div class="knobs-container">
+				<div class="knob-wrapper">
+					<p id="knob1-text">Hue</p>
+					<div class="knob-background">
+						<div class="slider">
+							<div id="knob1" class="knob"></div>
+						</div>
+					</div>
+					<p id="knob1-value">0</p>
+			  </div>
+			  <div class="knob-wrapper">
+			  	<p id="knob2-text">Saturation</p>
+					<div class="knob-background">
+						<div class="slider">
+							<div id="knob2" class="knob"></div>
+						</div>
+					</div>
+					<p id="knob2-value">100%</p>
+				</div>
+				<div class="knob-wrapper">
+					<p id="knob3-text">Lightness</p>
+					<div class="knob-background">
+						<div class="slider">
+							<div id="knob3" class="knob"></div>
+						</div>
+					</div>
+					<p id="knob3-value">50%</p>
+				</div>
+		  </div>
+	  </div>
+
+	  <div class="output-container">
+	  	<div class="outputs">
+	  		<div class="output--wrapper">
+	  			<h5>Hex</h5>
+	  			<span class="output--inner">
+	  			  <span id="hex-output" class="output">#ff0000</span><button class="copy">COPY</button>
+	  		  </span>
+	  		</div>
+	  		<div class="output--wrapper">
+	  			<h5>HSL</h5>
+	  			<span class="output--inner">
+	  			  <span id="hsl-output" class="output">hsl(0, 100%, 50%)</span><button class="copy">COPY</button>
+	  		  </span>
+	  		</div>
+	  		<div class="output--wrapper">
+	  			<h5>RGB</h5>
+	  			<span class="output--inner">
+	  			  <span id="rgb-output" class="output">rgb(255, 0, 0)</span><button class="copy">COPY</button>
+	  			</span>
+	  		</div>
+	  	</div>
+	  </div>
+
+		<script src="./colour-picker.js"></script>
+	</body>
+</html>
